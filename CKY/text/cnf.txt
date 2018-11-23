@@ -1,0 +1,16 @@
+S -> NP VP
+NP -> NP PP
+PP -> IN NP
+VP -> VP PP
+VP -> RB VP
+VP -> VB NP
+NP -> NP ADJ
+NP -> gia_đình
+IN -> của
+NP -> nam
+RB -> mới
+VB -> mua
+NP -> nhà
+ADJ -> mới
+IN -> ở
+NP -> quê

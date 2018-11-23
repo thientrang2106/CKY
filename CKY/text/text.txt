@@ -1,0 +1,156 @@
+Nam học bài
+S -> NP VP
+VP -> VB NP
+NP -> Nam
+VB -> học
+NP -> bài
+end
+Nam đang học bài ở trường
+S -> S PP
+S -> NP VP
+NP -> Nam
+VP -> ADVP VP
+ADVP -> đang
+PP -> IN NP
+NP -> trường
+VB -> học
+IN -> ở
+VP -> VB NP
+NP -> bài
+end
+Tôi sợ chiều thu phớt nắng mờ
+S -> NP VP
+NP -> Tôi
+VP -> VB NP
+NP -> NP ADJP
+NP -> NN NN
+ADJP -> JJ NP
+NP -> NN ADJP
+VB -> sợ
+NN -> chiều
+NN -> thu
+JJ -> phớt
+NN -> nắng
+ADJP -> mờ
+end
+I saw the man with the gun
+S -> NP VP
+NP -> DET N
+NP -> NP PP
+PP -> P NP
+VP -> V NP
+VP -> VP PP
+DET -> the
+NP -> I
+N -> man
+N -> gun
+P -> with
+V -> saw
+end
+the chef eats fish with the chopsticks
+NP -> DET N
+S -> NP VBZ
+S -> NP VP
+VP -> VP PP
+VP -> VBZ NP
+VP -> VBZ PP
+VP -> VBZ NNS
+VP -> VBZ VP
+VP -> VBP PP
+NP -> DT NN
+NP -> DT NNS
+PP -> IN NP
+DT -> the
+NN -> chef
+NNS -> fish
+NNS -> chopsticks
+VBP -> fish
+VBZ -> eats
+IN -> with
+end
+Nam mới mua một cuốn sách mới
+S -> NP VP
+NP -> Nam
+VP -> VP NP
+VP -> ADVP VB
+ADVP -> mới
+VB -> mua
+NP -> CD NP
+CD -> một
+NP -> NP ADJP
+NP -> UN NN
+ADJP -> mới
+UN -> cuốn
+NN -> sách
+end
+Nam mua một căn nhà rất rộng
+S -> NP VP
+NP -> Nam
+NP -> NP1 ADJP
+NP -> CD NP
+NP -> CD NP1
+NP1 -> N_UNIT NN
+VP -> VB NP
+ADJP -> RB JJ
+PP -> IN NN
+NN -> nhà
+N_UNIT -> căn
+VB -> mua 
+CD -> một
+RB -> rất
+JJ -> rộng
+end
+Tôi xin người cứ gian_dối
+S -> NP VP
+NP -> Tôi
+VP -> VP VP
+VP -> VB NP
+NP -> người
+VP -> ADVP VB
+ADVP -> cứ
+VB -> gian_dối
+VB -> xin
+end
+Nam rất thích bơi ở CLB
+S -> NP VP
+NP -> Nam
+VP -> VP VP
+VP -> ADVP VB
+VP -> VB PP
+PP -> IN NP
+ADVP -> rất
+VB -> thích
+VB -> bơi
+IN -> ở
+NP -> CLB
+end
+Nam mới mua một cuốn sách rất hay
+S -> NP VP
+VP -> VP NP
+VP -> ADVP VB
+NP -> CD NP
+NP -> NP ADJP
+NP -> UN NN
+ADJP -> RB JJ
+NP -> Nam
+ADVP -> mới
+VB -> mua
+CD -> một
+UN -> cuốn
+NN -> sách
+RB -> rất
+JJ -> hay
+end
+Nam hay đến thư_viện của trường
+S -> NP VP
+VP -> VP NP
+VP -> ADVP VB
+NP -> NN PP
+PP -> IN NP
+NP -> Nam
+ADVP -> hay
+VB -> đến
+NN -> thư_viện
+IN -> của
+NP -> trường
+end
