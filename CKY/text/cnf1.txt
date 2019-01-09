@@ -1,0 +1,24 @@
+PRP$ -> my
+NN -> birthday
+VBZQ -> is
+IN -> on
+JJ -> 8th
+NNP -> september
+VBZX -> is
+PRP -> i
+VBD -> read
+DT -> a
+NN -> book
+VBZ -> is
+NP -> PRP$ NN
+NP -> JJ NNP
+NP -> PRP
+NP -> DT NN
+PP -> IN NP
+VP -> VBD NP
+VP -> VBZ PP
+S -> NP X
+X -> VBZQ PP
+X -> VBZX PP
+S -> NP VP
+ROOT -> S

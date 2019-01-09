@@ -44,7 +44,7 @@ public class CKY extends JFrame{
     
   //  public static String pathText = "text/text.txt";
    // public static String pathSentence = "text/sentences.txt";
-    public static String pathCNF = "text/cnf.txt";
+    public static String pathCNF = "text/XSCNF.txt";
     
     
     // schedules the task to be run in an interval 
@@ -147,7 +147,7 @@ public class CKY extends JFrame{
         text_cnf.setBounds(130, 50, 700, 210);
         JScrollPane pane =  new JScrollPane(text_cnf);
         pane.setBounds(130, 50, 700, 210);
-        text_cnf.setPreferredSize(new Dimension(100,text_cnf.getHeight()+ 300));
+        text_cnf.setPreferredSize(new Dimension(100,text_cnf.getHeight()+ 2000));
         panel_sentence.add(pane);
         repaint();
         
@@ -246,59 +246,45 @@ public class CKY extends JFrame{
                             cky[i][i] = tl(cnf, words_1[i]);
                             label_cky[i + 1][i + 1].setBackground(Color.red);
                              try{
-                                  sleep(200);
+                                  sleep(500);
                             }catch ( InterruptedException ea){}; 
                             label_cky[i+1][i+1].setText(cky[i][i] + "\n" + "[" + Integer.toString(i) + ", " + Integer.toString(i + 1) + "]");
                             label_cky[i + 1][i + 1].setBackground(Color.white);
                             for(int j = i - 1; j >= 0; j--){
                                 for(int k = j; k <  i; k++){
+                                    System.out.println((j + 1) + " "+ (k + 1)+" "+ (i + 1));
                                     List<String> t1 = check(cky[j][k]);
                                     List<String> t2 = check(cky[k+1][i]);
-                                    for(int p = 0; p < t1.size(); p++){
-                                        for(int q = 0; q < t2.size(); q++){
-                                            String temp_1 = t1.get(p) + " " + t2.get(q);
-                                            label_cky[j + 1][k + 1].setBackground(Color.yellow);
+                                    label_cky[j + 1][k + 1].setBackground(Color.yellow);
                                             label_cky[k + 2][i + 1].setBackground(Color.yellow);
                                             label_cky[j + 1][i + 1].setBackground(Color.red);
+                                    for(int p = 0; p < t1.size(); p++){
+                                        for(int q = 0; q < t2.size(); q++){
+                                            
+                                            String temp_1 = t1.get(p) + " " + t2.get(q);
+                                            
                                             try{
-                                                sleep(200);
+                                                sleep(500);
                                             }catch(InterruptedException ea){};
                                             if(tl(cnf, temp_1) != ""){
                                                 label_cky[j + 1][k + 1].setBackground(Color.green);
                                                 label_cky[k + 2][i + 1].setBackground(Color.green);
                                                 label_cky[j + 1][i + 1].setBackground(Color.green);
                                                 try{
-                                                    sleep(200);
+                                                    sleep(500);
                                                 }catch(InterruptedException ea){};
                                                 cky[j][i] = tl(cnf, temp_1);
-                                               /* if(cky[j][i] == "")
-                                                    cky[j][i] = tl(cnf, temp_1);
-                                                else cky[j][i] += " / " + tl(cnf, temp_1);
-                                                List<String> t3 = check(cky[j][i]);
-                                                String a = "";
-                                                for(int t = 0; t < t3.size(); t++){
-                                                    a += t3.get(t) + "\n" + "[" + Integer.toString(j) + ", " + Integer.toString(k + 1) + "] + " + "[" + Integer.toString(k +1) + ", " + Integer.toString(i + 1) + "]\n";
-                                                    
-                                                }*/
-                                               // label_cky[j+1][i+1].setText(a);
                                                 label_cky[j+1][i+1].setText(cky[j][i] + "\n" + "[" + Integer.toString(j) + ", " + Integer.toString(k + 1) + "] + " + "[" + Integer.toString(k +1) + ", " + Integer.toString(i + 1) + "]");
-                                                //System.out.println(label_cky[j+1][i+1].getText());
-                                               /* if(label_cky[j+1][i+1].getText().equals("") || label_cky[j+1][i+1].getText().equals(a)){
-                                                    
-                                                    label_cky[j+1][i+1].setText(a);
-                                                }
-                                                else{
-                                                    
-                                                    String t = label_cky[j+1][i+1].getText() + " \n " + a;
-                                                    label_cky[j+1][i+1].setText(t);
-                                                }*/
+                                            
                                             }
-                                            label_cky[j + 1][i + 1].setBackground(Color.white);
+                                            
                                             if(tl(cnf, temp_1) == "" && cky[j][i] == "") cky[j][i] = "";
-                                            label_cky[j + 1][k + 1].setBackground(Color.white);
-                                            label_cky[k + 2][i + 1].setBackground(Color.white);
+                                            
                                         }
                                     }
+                                    label_cky[j + 1][i + 1].setBackground(Color.white);
+                                    label_cky[j + 1][k + 1].setBackground(Color.white);
+                                            label_cky[k + 2][i + 1].setBackground(Color.white);
                                 }
                             }
                         }

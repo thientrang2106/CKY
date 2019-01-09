@@ -1,0 +1,131 @@
+PRP -> i
+VBP -> am
+IN -> in
+DT -> a
+JJ -> beautiful
+NN -> room
+DT -> an
+JJ -> old
+NN -> house
+RB -> very
+JJ -> hungry
+VBP -> have
+VBD -> got
+DT -> some
+NNS -> binoculars
+PRP1 -> my
+NN -> hand
+PRP -> she
+VBZ -> is
+JJ -> sad
+IN -> because
+NNP -> drew 
+VBD -> was
+VBG -> working
+NNP -> nam
+VBD -> studied
+IN -> at
+NN -> school
+VBG -> studying
+DT -> the
+NN -> city
+VBZ -> loves
+VBG -> swimming
+NN -> club
+CC -> and
+NNP -> lan
+NN -> lot
+IN -> of
+NNS -> books
+NN -> internet
+VBZ -> meets
+PRP1 -> his
+NNS -> friends
+VBD -> gave
+NN -> gift
+TO -> to
+NN -> boy
+VBD -> said
+IN -> that
+NNS -> dogs
+VBD -> chased
+NNS -> cats
+VBD -> sat
+IN -> on
+NN -> chair
+NN -> man
+VBZ -> has
+VBN -> been
+VBN -> catched
+IN -> by
+NN -> police
+VBD -> bought
+JJ -> new
+NN -> countryside.
+VBZ -> likes
+NNP -> dole
+VBN -> defeated
+NNP -> clinton
+PRP -> they
+VBD -> heard
+PRP -> you
+VBG -> missing
+NNS -> classes
+PRP -> we
+VBP -> live
+NN -> past
+JJ -> good
+NN -> book
+JJ -> much
+RB -> just
+IN -> after
+JJ -> married
+NP -> PRP
+NP -> JJ NN
+ADJP -> RB JJ
+NP -> DT NNS
+NP -> PRP1 NN
+ADJP -> JJ
+NP -> NNP
+VP -> VBG
+NP -> NN
+NP -> DT NN
+NP -> NNP X
+X -> CC NNP
+NP -> PRP1 NNS
+NP -> NNS X
+X -> CC NNS
+NP -> NNS
+ADVP -> RB
+NP -> DT NP
+VP -> VBP ADJP
+PP -> IN NP
+VP -> VBD VP
+PP -> TO NP
+VP -> VBD NP
+VP -> VBZ NP
+VP -> VBG NP
+NP -> ADJP NN
+VP -> VBZ X
+X -> NP ADJP
+VP -> VBD ADJP
+NP -> DT X
+X -> NP PP
+S -> NP VP
+VP -> VBD X
+VP -> VBD PP
+VP -> VBG PP
+NP -> NNS PP
+VP -> VBN PP
+VP -> VBP PP
+ROOT -> S
+VP -> VBP VP
+SBAR -> IN S
+VP -> VBZ VP
+VP -> VBN VP
+X -> ADJP SBAR
+NP -> NN PP
+VP -> VBD SBAR
+VP -> ADVP X
+X -> VP SBAR
+VP -> VBP NP
